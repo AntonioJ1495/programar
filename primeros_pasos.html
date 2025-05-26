@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeros Pasos en Python</title>
+    <link rel="stylesheet" href="p_p.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="module-container">
+        <!-- Header con Breadcrumbs -->
+        <nav class="breadcrumbs">
+            <a href="inicio.html">Inicio</a> > <span>Comienzo</span>
+        </nav>
+
+        <!-- Header del Módulo -->
+        <header class="module-header">
+            <div class="progress-container">
+                <span>Progreso: 25%</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                </div>
+            </div>
+            <h1>🐍 Tu comienzo en <span>Python</span></h1>
+            <p class="module-description">Desde cero hasta tu primer programa funcional</p>
+        </header>
+
+        <!-- Sección: Introducción a Python -->
+        <section class="lesson-card" id="que-es-python">
+            <div class="lesson-icon">🔍</div>
+            <h2>¿Qué es Python?</h2>
+            <div class="lesson-content">
+                <div class="explanation-box">
+                    <p>Python es un lenguaje de <strong>alto nivel</strong> creado por Guido van Rossum en 1991. Su filosofía se basa en:</p>
+                    <ul class="philosophy-list">
+                        <li><strong>Legibilidad:</strong> Sintaxis clara y cercana al inglés</li>
+                        <li><strong>Productividad:</strong> Código más corto que otros lenguajes</li>
+                        <li><strong>Versatilidad:</strong> Multiparadigma (orientado a objetos, funcional, etc.)</li>
+                    </ul>
+                </div>
+
+                <div class="real-world-example">
+                    <h4>🌍 Ejemplo Real:</h4>
+                    <p>Instagram usa Python con Django para manejar millones de usuarios. NASA lo usa para análisis de datos.</p>
+                </div>
+
+                <div class="anatomy-box">
+                    <h4>🧠 Tu primer programa:</h4>
+                    <div class="code-example">
+                        <pre><code># Esto es un comentario (ignorado por Python)
+print("¡Hola Mundo!")  # Muestra texto en pantalla
+
+# Variables almacenan datos
+nombre = "Ana"
+edad = 30</code></pre>
+                    </div>
+                </div>
+
+                <div class="practice-task">
+                    <h4>📝 Tarea Práctica:</h4>
+                    <p>Crea un archivo llamado <code>hola_mundo.py</code> y escribe:</p>
+                    <ol>
+                        <li>Un comentario con tu nombre</li>
+                        <li>Un mensaje de bienvenida usando <code>print()</code></li>
+                        <li>Dos variables: una con tu ciudad y otra con tu edad</li>
+                    </ol>
+                    <p>Ejecútalo desde la terminal con: <code>python hola_mundo.py</code></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Variables y Tipos de Datos -->
+        <section class="lesson-card" id="variables">
+            <div class="lesson-icon">📦</div>
+            <h2>Variables y Tipos de Datos</h2>
+            <div class="lesson-content">
+                <div class="deep-explanation">
+                    <p>Una variable es como una <strong>caja etiquetada</strong> donde guardas información. En Python:</p>
+                    <ul>
+                        <li>No necesitas declarar el tipo (tipado dinámico)</li>
+                        <li>Se crean al asignarles un valor</li>
+                        <li>Pueden cambiar de tipo (no es tipado estático)</li>
+                    </ul>
+                </div>
+
+                <div class="data-types-detail">
+                    <h4>📊 Tipos de Datos Básicos:</h4>
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-header">Texto (str)</div>
+                            <div class="type-example">mensaje = "Hola Python"</div>
+                            <div class="type-desc">Entre comillas simples o dobles</div>
+                        </div>
+                        <div class="type-card">
+                            <div class="type-header">Número Entero (int)</div>
+                            <div class="type-example">contador = 42</div>
+                            <div class="type-desc">Sin decimales, positivos o negativos</div>
+                        </div>
+                        <div class="type-card">
+                            <div class="type-header">Número Decimal (float)</div>
+                            <div class="type-example">pi = 3.1416</div>
+                            <div class="type-desc">Con punto decimal</div>
+                        </div>
+                        <div class="type-card">
+                            <div class="type-header">Booleano (bool)</div>
+                            <div class="type-example">es_valido = True</div>
+                            <div class="type-desc">Solo puede ser True o False</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="practice-task">
+                    <h4>📝 Tarea Práctica:</h4>
+                    <p>Crea un programa llamado <code>variables.py</code> que:</p>
+                    <ol>
+                        <li>Almacene tu nombre completo en una variable</li>
+                        <li>Guarde tu estatura en metros (ej: 1.75)</li>
+                        <li>Contenga una variable booleana <code>programador</code> con valor True</li>
+                        <li>Muestre todos los valores con <code>print()</code></li>
+                    </ol>
+                    <div class="tip-box">
+                        <div class="tip-icon">💡</div>
+                        <p>Usa <code>type(variable)</code> para ver el tipo de dato. Ej: <code>print(type(estatura))</code></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Operadores -->
+        <section class="lesson-card" id="operadores">
+            <div class="lesson-icon">➕</div>
+            <h2>Operadores en Python</h2>
+            <div class="lesson-content">
+                <div class="operator-types">
+                    <h4>1. Operadores Aritméticos:</h4>
+                    <div class="operator-examples">
+                        <div class="operator-example">
+                            <code>5 + 3</code> → Suma (resultado: 8)
+                        </div>
+                        <div class="operator-example">
+                            <code>10 - 2</code> → Resta (resultado: 8)
+                        </div>
+                        <div class="operator-example">
+                            <code>4 * 2</code> → Multiplicación (resultado: 8)
+                        </div>
+                        <div class="operator-example">
+                            <code>16 / 2</code> → División (resultado: 8.0)
+                        </div>
+                        <div class="operator-example">
+                            <code>17 % 3</code> → Módulo (resto de división: 2)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="operator-types">
+                    <h4>2. Operadores de Comparación:</h4>
+                    <p>Devuelven <code>True</code> o <code>False</code></p>
+                    <div class="comparison-grid">
+                        <div class="comparison-example">
+                            <code>5 == 5</code> → Igual a (True)
+                        </div>
+                        <div class="comparison-example">
+                            <code>5 != 3</code> → Diferente de (True)
+                        </div>
+                        <div class="comparison-example">
+                            <code>10 > 20</code> → Mayor que (False)
+                        </div>
+                        <div class="comparison-example">
+                            <code>15 <= 15</code> → Menor o igual que (True)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="practice-task">
+                    <h4>📝 Tarea Práctica:</h4>
+                    <p>Crea un archivo <code>calculadora.py</code> que:</p>
+                    <ol>
+                        <li>Defina dos variables numéricas: <code>base = 10</code> y <code>altura = 5</code></li>
+                        <li>Calcule el área de un triángulo (base × altura / 2)</li>
+                        <li>Compare si el área es mayor que 20 e imprima el resultado</li>
+                        <li>Ejecútalo y verifica los resultados</li>
+                    </ol>
+                    <div class="expected-output">
+                        <h5>Salida esperada:</h5>
+                        <pre>El área es: 25.0
+¿Es mayor que 20? True</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Input/Output -->
+        <section class="lesson-card" id="io">
+            <div class="lesson-icon">💬</div>
+            <h2>Interacción con el Usuario</h2>
+            <div class="lesson-content">
+                <div class="io-explanation">
+                    <p>Python permite interactuar mediante:</p>
+                    <ul>
+                        <li><strong>input()</strong>: Lee texto desde el teclado</li>
+                        <li><strong>print()</strong>: Muestra texto en pantalla</li>
+                    </ul>
+                    <div class="code-example">
+                        <pre><code># Ejemplo básico
+nombre = input("¿Cómo te llamas? ")
+print("Hola", nombre)</code></pre>
+                    </div>
+                </div>
+
+                <div class="print-variations">
+                    <h4>📢 Variantes de print():</h4>
+                    <div class="code-example">
+                        <pre><code># Concatenación con +
+print("Hola " + nombre)
+
+# Formato con f-strings (Python 3.6+)
+print(f"Hola {nombre}, tienes {edad} años")
+
+# Múltiples argumentos
+print("Hola", nombre, "edad:", edad)</code></pre>
+                    </div>
+                </div>
+
+                <div class="practice-task">
+                    <h4>📝 Tarea Final:</h4>
+                    <p>Crea un programa <code>registro.py</code> que:</p>
+                    <ol>
+                        <li>Pida al usuario su nombre, edad y ciudad</li>
+                        <li>Almacene cada dato en una variable</li>
+                        <li>Muestre un resumen usando f-strings</li>
+                        <li>Convierta la edad a número entero</li>
+                    </ol>
+                    <div class="example-dialog">
+                        <h5>Ejemplo de ejecución:</h5>
+                        <pre>¿Cómo te llamas? <span>María</span>
+¿Cuántos años tienes? <span>28</span>
+¿En qué ciudad vives? <span>Madrid</span>
+
+Hola María, tienes 28 años y vives en Madrid</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación -->
+        <div class="lesson-navigation">
+            <a href="inicio.html" class="nav-button">🏠 Volver al Inicio</a>
+            <a href="condicionales.html" class="nav-button">Siguiente: Condicionales ➔</a>
+        </div>
+    </div>
+</body>
+</html>

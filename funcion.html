@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones en Python</title>
+    <link rel="stylesheet" href="funcion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="funciones-container">
+        <!-- Header con Breadcrumbs -->
+        <nav class="funciones-breadcrumbs">
+            <a href="inicio.html">Inicio</a> > 
+            <a href="bucles.html">Bucles</a> > 
+            <span>Funciones</span>
+        </nav>
+
+        <!-- Header del Módulo -->
+        <header class="funciones-header">
+            <div class="funciones-progress">
+                <span>Progreso: 100%</span>
+                <div class="funciones-progress-bar">
+                    <div class="funciones-progress-fill" style="width: 100%;"></div>
+                </div>
+            </div>
+            <h1 class="funciones-title">🧩 Funciones en <span>Python</span></h1>
+            <p class="funciones-description">Organiza y reutiliza tu código eficientemente</p>
+        </header>
+
+        <!-- Sección: Introducción a Funciones -->
+        <section class="funciones-card" id="introduccion">
+            <div class="funciones-icon">📦</div>
+            <h2 class="funciones-card-title">¿Qué son las funciones?</h2>
+            <div class="funciones-content">
+                <div class="funciones-explanation">
+                    <p>Las funciones son <strong>bloques de código reutilizables</strong> que realizan una tarea específica. Son fundamentales para:</p>
+                    
+                    <div class="funciones-benefits">
+                        <div class="benefit">
+                            <span class="benefit-icon">🔄</span>
+                            <span class="benefit-text">Evitar código repetido</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">🧩</span>
+                            <span class="benefit-text">Organizar el código</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">⚙️</span>
+                            <span class="benefit-text">Facilitar el mantenimiento</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="funciones-anatomy">
+                    <h3 class="anatomy-title">🧠 Anatomía de una función:</h3>
+                    <div class="funciones-code">
+                        <pre><code>def <span class="code-function">nombre_funcion</span>(<span class="code-param">parametros</span>):
+    <span class="code-comment">"""Docstring: documenta lo que hace la función"""</span>
+    <span class="code-comment"># Cuerpo de la función</span>
+    <span class="code-keyword">return</span> <span class="code-var">resultado</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Crear funciones -->
+        <section class="funciones-card" id="crear-funciones">
+            <div class="funciones-icon">🛠️</div>
+            <h2 class="funciones-card-title">Crear funciones</h2>
+            <div class="funciones-content">
+                <div class="funciones-explanation">
+                    <p>Para definir una función en Python:</p>
+                    
+                    <ol class="funciones-steps">
+                        <li>Usa la palabra clave <code>def</code></li>
+                        <li>Asigna un nombre descriptivo</li>
+                        <li>Define parámetros entre paréntesis (opcional)</li>
+                        <li>Termina con dos puntos (<code>:</code>)</li>
+                        <li>Indenta el cuerpo de la función</li>
+                    </ol>
+                </div>
+
+                <div class="funciones-examples">
+                    <div class="example-column">
+                        <h4 class="example-title">Ejemplo 1: Función simple</h4>
+                        <div class="funciones-code">
+                            <pre><code>def saludar():
+    print("¡Hola Mundo!")
+
+<span class="code-comment"># Llamar a la función</span>
+saludar()</code></pre>
+                        </div>
+                        <div class="funciones-output">
+                            <h5>Salida:</h5>
+                            <pre>¡Hola Mundo!</pre>
+                        </div>
+                    </div>
+                    
+                    <div class="example-column">
+                        <h4 class="example-title">Ejemplo 2: Con parámetros</h4>
+                        <div class="funciones-code">
+                            <pre><code>def saludar_personal(nombre):
+    print(f"¡Hola {nombre}!")
+
+saludar_personal("Ana")</code></pre>
+                        </div>
+                        <div class="funciones-output">
+                            <h5>Salida:</h5>
+                            <pre>¡Hola Ana!</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="funciones-task">
+                    <h4 class="task-title">📝 Tarea Práctica</h4>
+                    <p>Crea un archivo <code>calculadora_basica.py</code> con:</p>
+                    <ol class="task-steps">
+                        <li>Una función <code>sumar(a, b)</code> que devuelva la suma</li>
+                        <li>Una función <code>es_par(numero)</code> que devuelva True/False</li>
+                        <li>Prueba las funciones con diferentes valores</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Retorno de valores -->
+        <section class="funciones-card" id="retorno">
+            <div class="funciones-icon">↩️</div>
+            <h2 class="funciones-card-title">Retorno de valores</h2>
+            <div class="funciones-content">
+                <div class="funciones-explanation">
+                    <p>La palabra clave <code>return</code> permite que una función:</p>
+                    
+                    <div class="return-features">
+                        <div class="feature">
+                            <span class="feature-icon">📤</span>
+                            <span class="feature-text">Devuelva un valor al llamador</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⏹️</span>
+                            <span class="feature-text">Termine la ejecución de la función</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🧮</span>
+                            <span class="feature-text">Puede devolver múltiples valores (como tupla)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="funciones-code-example">
+                    <h4 class="example-title">Ejemplo: Cálculo de área</h4>
+                    <div class="funciones-code">
+                        <pre><code>def calcular_area_rectangulo(base, altura):
+    <span class="code-comment">"""Calcula el área de un rectángulo"""</span>
+    return base * altura
+
+area = calcular_area_rectangulo(5, 3)
+print(f"El área es: {area}")</code></pre>
+                    </div>
+                </div>
+
+                <div class="funciones-note important">
+                    <p><strong>Diferencia clave:</strong> <code>print()</code> muestra texto en pantalla, mientras que <code>return</code> devuelve un valor que puede almacenarse en variables.</p>
+                </div>
+
+                <div class="funciones-task">
+                    <h4 class="task-title">📝 Tarea Práctica</h4>
+                    <p>Modifica tu calculadora para:</p>
+                    <ol class="task-steps">
+                        <li>Las funciones devuelvan valores en lugar de imprimir</li>
+                        <li>Almacena los resultados en variables</li>
+                        <li>Imprime los resultados con formato (ej: "5 + 3 = 8")</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Parámetros avanzados -->
+        <section class="funciones-card" id="parametros">
+            <div class="funciones-icon">🎚️</div>
+            <h2 class="funciones-card-title">Parámetros avanzados</h2>
+            <div class="funciones-content">
+                <div class="funciones-explanation">
+                    <p>Python ofrece flexibilidad en el manejo de parámetros:</p>
+                    
+                    <div class="parametro-cards">
+                        <div class="parametro-card">
+                            <span class="parametro-name">Parámetros por defecto</span>
+                            <div class="funciones-code">
+                                <pre><code>def saludar(nombre="Usuario"):
+    print(f"Hola {nombre}")
+
+saludar() <span class="code-comment"># Usa el valor por defecto</span></code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="parametro-card">
+                            <span class="parametro-name">Argumentos nombrados</span>
+                            <div class="funciones-code">
+                                <pre><code>def mostrar_info(nombre, edad):
+    print(f"{nombre} tiene {edad} años")
+
+mostrar_info(edad=25, nombre="Ana")</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="funciones-note tip">
+                    <div class="note-icon">💡</div>
+                    <p>Los parámetros con valores por defecto deben ir después de los parámetros obligatorios.</p>
+                </div>
+
+                <div class="funciones-task">
+                    <h4 class="task-title">📝 Tarea Práctica</h4>
+                    <p>Crea una función <code>formatear_fecha(dia, mes, año=2023)</code> que:</p>
+                    <ol class="task-steps">
+                        <li>Devuelva la fecha formateada como "DD/MM/AAAA"</li>
+                        <li>Use el año por defecto si no se proporciona</li>
+                        <li>Permita llamarla con argumentos nombrados</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Alcance de variables -->
+        <section class="funciones-card" id="alcance">
+            <div class="funciones-icon">🌐</div>
+            <h2 class="funciones-card-title">Alcance de variables</h2>
+            <div class="funciones-content">
+                <div class="funciones-explanation">
+                    <p>El alcance (scope) determina dónde una variable es accesible:</p>
+                    
+                    <div class="scope-types">
+                        <div class="scope-type">
+                            <span class="scope-name">Variables globales</span>
+                            <span class="scope-desc">Accesibles en todo el programa</span>
+                        </div>
+                        <div class="scope-type">
+                            <span class="scope-name">Variables locales</span>
+                            <span class="scope-desc">Existen solo dentro de la función</span>
+                        </div>
+                    </div>
+                    
+                    <div class="funciones-code">
+                        <pre><code>contador = 10 <span class="code-comment"># Global</span>
+
+def modificar_contador():
+    contador = 20 <span class="code-comment"># Local (no afecta la global)</span>
+    print(f"Dentro: {contador}")
+
+modificar_contador()
+print(f"Fuera: {contador}")</code></pre>
+                    </div>
+                </div>
+
+                <div class="funciones-note important">
+                    <p><strong>¡Cuidado!</strong> Para modificar una variable global dentro de una función, debes usar la palabra clave <code>global</code>.</p>
+                </div>
+
+                <div class="funciones-task">
+                    <h4 class="task-title">📝 Tarea Final</h4>
+                    <p>Crea un programa <code>contador.py</code> que:</p>
+                    <ol class="task-steps">
+                        <li>Tenga una variable global <code>contador = 0</code></li>
+                        <li>Defina funciones para <code>incrementar()</code>, <code>decrementar()</code> y <code>mostrar()</code></li>
+                        <li>Las funciones modifiquen la variable global</li>
+                        <li>Prueba llamando a las funciones en diferente orden</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación -->
+        <div class="funciones-navigation">
+            <a href="bucles.html" class="funciones-nav-button prev">
+                <span>⬅️</span> Bucles
+            </a>
+            <a href="inicio.html" class="funciones-nav-button next">
+                Volver al Inicio <span>🏠</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

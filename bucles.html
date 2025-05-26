@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles en Python</title>
+    <link rel="stylesheet" href="bucles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bucles-container">
+        <!-- Header con Breadcrumbs -->
+        <nav class="bucles-breadcrumbs">
+            <a href="inicio.html">Inicio</a> > 
+            <a href="condicionales.html">Condicionales</a> > 
+            <span>Bucles</span>
+        </nav>
+
+        <!-- Header del Módulo -->
+        <header class="bucles-header">
+            <div class="bucles-progress">
+                <span>Progreso: 75%</span>
+                <div class="bucles-progress-bar">
+                    <div class="bucles-progress-fill" style="width: 75%;"></div>
+                </div>
+            </div>
+            <h1 class="bucles-title">🔄 Bucles en <span>Python</span></h1>
+            <p class="bucles-description">Automatiza tareas repetitivas con for y while</p>
+        </header>
+
+        <!-- Sección: Introducción a Bucles -->
+        <section class="bucles-card" id="introduccion">
+            <div class="bucles-icon">♻️</div>
+            <h2 class="bucles-card-title">¿Qué son los bucles?</h2>
+            <div class="bucles-content">
+                <div class="bucles-explanation">
+                    <p>Los bucles permiten <strong>ejecutar un bloque de código múltiples veces</strong>, lo que es esencial para:</p>
+                    
+                    <div class="bucles-features">
+                        <div class="feature">
+                            <span class="feature-icon">🔁</span>
+                            <span class="feature-text">Repetir acciones</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">📊</span>
+                            <span class="feature-text">Procesar listas de datos</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⏱️</span>
+                            <span class="feature-text">Automatizar tareas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bucles-types">
+                    <h3 class="types-title">Tipos de bucles en Python:</h3>
+                    <div class="type-card">
+                        <span class="type-name">for</span>
+                        <span class="type-desc">Itera sobre una secuencia (lista, tupla, string, etc.)</span>
+                    </div>
+                    <div class="type-card">
+                        <span class="type-name">while</span>
+                        <span class="type-desc">Ejecuta mientras una condición sea verdadera</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Bucle for -->
+        <section class="bucles-card" id="for-loop">
+            <div class="bucles-icon">➰</div>
+            <h2 class="bucles-card-title">Bucle for</h2>
+            <div class="bucles-content">
+                <div class="bucles-explanation">
+                    <p>El bucle <code class="code-keyword">for</code> se usa para <strong>iterar sobre elementos de una secuencia</strong>:</p>
+                    
+                    <div class="bucles-syntax">
+                        <pre class="syntax-block">for <span class="syntax-var">elemento</span> in <span class="syntax-var">secuencia</span>:
+    <span class="syntax-comment"># Bloque de código a repetir</span></pre>
+                    </div>
+                </div>
+
+                <div class="bucles-examples">
+                    <div class="example-column">
+                        <h4 class="example-title">Ejemplo 1: Iterar lista</h4>
+                        <div class="bucles-code">
+                            <pre><code>frutas = ["manzana", "banana", "cereza"]
+
+for fruta in frutas:
+    print(f"Me gusta la {fruta}")</code></pre>
+                        </div>
+                        <div class="bucles-output">
+                            <h5>Salida:</h5>
+                            <pre>Me gusta la manzana
+Me gusta la banana
+Me gusta la cereza</pre>
+                        </div>
+                    </div>
+                    
+                    <div class="example-column">
+                        <h4 class="example-title">Ejemplo 2: Función range()</h4>
+                        <div class="bucles-code">
+                            <pre><code>for i in range(5):
+    print(f"Cuenta: {i}")</code></pre>
+                        </div>
+                        <div class="bucles-output">
+                            <h5>Salida:</h5>
+                            <pre>Cuenta: 0
+Cuenta: 1
+Cuenta: 2
+Cuenta: 3
+Cuenta: 4</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bucles-task">
+                    <h4 class="task-title">📝 Tarea Práctica</h4>
+                    <p>Crea un programa <code>tabla_multiplicar.py</code> que:</p>
+                    <ol class="task-steps">
+                        <li>Pida al usuario un número (entre 1 y 10)</li>
+                        <li>Use un bucle <code>for</code> con <code>range()</code> para mostrar su tabla de multiplicar</li>
+                        <li>Muestre cada línea como "5 x 3 = 15"</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Bucle while -->
+        <section class="bucles-card" id="while-loop">
+            <div class="bucles-icon">🔄</div>
+            <h2 class="bucles-card-title">Bucle while</h2>
+            <div class="bucles-content">
+                <div class="bucles-explanation">
+                    <p>El bucle <code class="code-keyword">while</code> repite el código <strong>mientras una condición sea verdadera</strong>:</p>
+                    
+                    <div class="bucles-syntax">
+                        <pre class="syntax-block">while <span class="syntax-var">condición</span>:
+    <span class="syntax-comment"># Bloque de código a repetir</span></pre>
+                    </div>
+                    
+                    <div class="bucles-note important">
+                        <p>¡Cuidado con los bucles infinitos! Asegúrate que la condición eventualmente sea False.</p>
+                    </div>
+                </div>
+
+                <div class="bucles-examples">
+                    <div class="example-column">
+                        <h4 class="example-title">Ejemplo 1: Contador</h4>
+                        <div class="bucles-code">
+                            <pre><code>contador = 0
+
+while contador < 5:
+    print(f"Contador: {contador}")
+    contador += 1</code></pre>
+                        </div>
+                        <div class="bucles-output">
+                            <h5>Salida:</h5>
+                            <pre>Contador: 0
+Contador: 1
+Contador: 2
+Contador: 3
+Contador: 4</pre>
+                        </div>
+                    </div>
+                    
+                    <div class="example-column">
+                        <h4 class="example-title">Ejemplo 2: Validación</h4>
+                        <div class="bucles-code">
+                            <pre><code>respuesta = ""
+
+while respuesta != "salir":
+    respuesta = input("Escribe 'salir' para terminar: ")
+    print(f"Escribiste: {respuesta}")</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bucles-task">
+                    <h4 class="task-title">📝 Tarea Práctica</h4>
+                    <p>Crea un programa <code>adivina_numero.py</code> que:</p>
+                    <ol class="task-steps">
+                        <li>Genere un número aleatorio entre 1-100 (usa <code>import random; numero = random.randint(1, 100)</code>)</li>
+                        <li>Pida al usuario que adivine el número</li>
+                        <li>Use un bucle <code>while</code> para continuar hasta que acierte</li>
+                        <li>Dé pistas ("mayor" o "menor") en cada intento</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Control de bucles -->
+        <section class="bucles-card" id="control">
+            <div class="bucles-icon">⏯️</div>
+            <h2 class="bucles-card-title">Control de bucles</h2>
+            <div class="bucles-content">
+                <div class="bucles-explanation">
+                    <p>Python ofrece palabras clave para <strong>controlar el flujo</strong> de los bucles:</p>
+                    
+                    <div class="control-cards">
+                        <div class="control-card">
+                            <span class="control-keyword">break</span>
+                            <span class="control-desc">Termina el bucle inmediatamente</span>
+                        </div>
+                        <div class="control-card">
+                            <span class="control-keyword">continue</span>
+                            <span class="control-desc">Salta a la siguiente iteración</span>
+                        </div>
+                        <div class="control-card">
+                            <span class="control-keyword">else</span>
+                            <span class="control-desc">Se ejecuta si el bucle termina normalmente (sin break)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bucles-code-example">
+                    <h4 class="example-title">Ejemplo: break y continue</h4>
+                    <div class="bucles-code">
+                        <pre><code># Ejemplo de break
+for numero in range(10):
+    if numero == 5:
+        break
+    print(numero)
+
+# Ejemplo de continue
+for numero in range(10):
+    if numero % 2 == 0:
+        continue
+    print(numero)</code></pre>
+                    </div>
+                </div>
+
+                <div class="bucles-task">
+                    <h4 class="task-title">📝 Tarea Final</h4>
+                    <p>Crea un programa <code>busqueda.py</code> que:</p>
+                    <ol class="task-steps">
+                        <li>Tenga una lista de nombres</li>
+                        <li>Pida al usuario un nombre a buscar</li>
+                        <li>Use un bucle <code>for</code> con <code>else</code> para buscar</li>
+                        <li>Si lo encuentra, muestre "¡Encontrado!" y use <code>break</code></li>
+                        <li>Si no, muestre "No encontrado" (usando el <code>else</code> del for)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación -->
+        <div class="bucles-navigation">
+            <a href="condicionales.html" class="bucles-nav-button prev">
+                <span>⬅️</span> Condicionales
+            </a>
+            <a href="funcion.html" class="bucles-nav-button next">
+                Funciones <span>➔</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
